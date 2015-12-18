@@ -48,6 +48,7 @@ function newGame() {
 	resetVariables();
 	render();
 	generateNumber();
+	console.log(secretNumber);
 }
 
 function guessInput() {
@@ -95,7 +96,6 @@ function checkGuess() {
 
 function generateFeedback() {
 	numberDifference = Math.abs(userGuess - secretNumber);
-	console.log(secretNumber);
 
 	if (secretNumber == userGuess) {
 		userFeedback = 'Congratulations!<br><br>Click new game to play again';
